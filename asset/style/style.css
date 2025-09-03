@@ -147,6 +147,125 @@ section {
   margin-top: 8px;
 }
 
+/* ===== CONTENT & KONTAK ===== */
+.content {
+  background-color: #F4EEE5;
+  color: #AD7D52;
+  width: 85%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  line-height: 1.6;
+  flex-shrink: 0;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.content ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.content ul li a {
+  color: #AD7D52;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.content ul li a:hover {
+  text-decoration: underline;
+}
+
+/* MAP */
+.map {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* FORM KONTAK */
+.content form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.content form input,
+.content form textarea,
+.content form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.content form input:focus,
+.content form textarea:focus,
+.content form select:focus {
+  border-color: #AD7D52;
+}
+
+.content form button {
+  background: #AD7D52;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.content form button:hover {
+  background: #8a5f3d;
+}
+
+/* ===== MEDIA QUERY UNTUK MOBILE ===== */
+@media (max-width: 768px) {
+  .content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .map {
+    height: 200px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .content ul li {
+    font-size: 14px;
+  }
+}
+
 /* ===== FORM ===== */
 form {
   display: flex;

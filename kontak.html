@@ -8,18 +8,19 @@
   <link rel="stylesheet" href="asset/style/style.css">
 </head>
 <body>
-    <nav class="nav">
+  <!-- NAVBAR -->
+  <nav class="nav">
     <div class="header">
       <img src="asset/image/katalog.jpg" alt="Logo">
       <h1>Bersi-bersi Lemari</h1>
     </div>
-  <div class="hamburger" id="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <div class="menu">
-      <ul class="hidden" id="menu">
+      <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="tentang.html">Tentang Kami</a></li>
         <li><a href="donasi.html">Donasi Pakaian</a></li>
@@ -28,29 +29,41 @@
         <li><a href="kontak.html" class="active">Alamat & Kontak</a></li>
       </ul>
     </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
   <main>
     <section id="kontak" class="content">
       <h2>Alamat & Kontak</h2>
       <p>Untuk informasi lebih lanjut, hubungi kami melalui:</p>
       <ul>
         <li>Email: info@bersibersilemari.org</li>
-      <li>Telepon: (021) 123-4567</li>
-      <li>Alamat: Jl. Contoh No. 123, Jakarta</li>
-    </ul>
-    <p>Ikuti kami di media sosial:</p>
-    <ul>
-      <li><a href="https://www.facebook.com/bersibersilemari">Facebook</a></li>
-      <li><a href="https://www.instagram.com/bersibersilemari">Instagram</a></li>
-      <li><a href="https://www.twitter.com/bersibersilemari">Twitter</a></li>
-    </ul>
-    <div class="map">
-      <iframe src="" frameborder="0"></iframe>
-    </div>
-  </section>
-    <footer class="footer">
+        <li>Telepon: (021) 123-4567</li>
+        <li>Alamat: Jl. Langit-Langit, Kayu Putih, Kec. Pulo Gadung, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13210</li>
+      </ul>
+
+      <p>Ikuti kami di media sosial:</p>
+      <ul>
+        <li><a href="https://www.facebook.com/bersibersilemari" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/bersibersilemari" target="_blank">Instagram</a></li>
+        <li><a href="https://www.twitter.com/bersibersilemari" target="_blank">Twitter</a></li>
+      </ul>
+
+      <div class="map">
+        <!-- Ganti src dengan link Google Maps lokasi -->
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5751948372663!2d106.88138259999997!3d-6.187559600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eddf79ad72cf%3A0xf7dbdd67f723868a!2sYayasan%20Teman%20Hebat%20Berkarya!5e0!3m2!1sid!2sid!4v1756898906839!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+       referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
     <div class="container">
       <p>&copy; 2023 Bersi-bersi Lemari. All rights reserved.</p>
     </div>
-    <script src="asset/js/app.js"></script>
+  </footer>
+
+  <script src="asset/js/app.js"></script>
 </body>
 </html>
