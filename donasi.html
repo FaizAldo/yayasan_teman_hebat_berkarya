@@ -19,7 +19,7 @@
   <span></span>
 </div>
     <div class="menu">
-      <ul>
+      <ul class="hidden" id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="tentang.html">Tentang Kami</a></li>
         <li><a href="donasi.html" class="active">Donasi Pakaian</a></li>
@@ -56,14 +56,5 @@
         <p>&copy; 2023 Bersi-bersi Lemari. All rights reserved.</p>
         </div>
   <script src="asset/js/app.js"></script>
-  <script>
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
-});
-</script>
 </body>
 </html>

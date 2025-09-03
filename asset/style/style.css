@@ -67,12 +67,10 @@ body {
 }
 
 .hamburger {
-  display: none;
+  display: none;            /* sembunyikan di desktop */
   flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 25px;
   cursor: pointer;
+  gap: 5px;
 }
 
 .hamburger span {
@@ -200,34 +198,73 @@ form button:hover {
   font-size: 14px;
   margin-top: auto;        /* selalu dorong ke bawah */
 }
-
-
-/* Responsive */
+/* MEDIA QUERY UNTUK LAYAR ≤ 768px *//* ===== MEDIA QUERY UNTUK LAYAR ≤ 768px ===== */
 @media (max-width: 768px) {
+  /* Tampilkan hamburger */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+  }
 
+  .hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Menu hidden default */
   .menu {
     position: absolute;
     top: 60px;
     left: -100%;
+    width: 50%;
     flex-direction: column;
     background: #645141;
-    width: 100%;
     transition: left 0.3s ease;
+    z-index: 999;
   }
 
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Menu aktif tampil */
   .menu.active {
     left: 0;
   }
 
-  .hamburger {
+  .menu.active ul {
     display: flex;
   }
-}
 
-
-
-  /* animasi dropdown */
-  @keyframes dropdown {
-    0% { opacity: 0; transform: translateY(-10px); }
-    100% { opacity: 1; transform: translateY(0); }
+  .menu ul li {
+    margin: 15px 0;
+    text-align: center;
   }
+
+  /* Animasi hamburger saat diklik */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+}
+@media (max-width: 600px) {
+  section {
+    width: 95%;
+    padding: 20px;
+  }
+}

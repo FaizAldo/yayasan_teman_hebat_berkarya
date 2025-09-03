@@ -1,3 +1,12 @@
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
+});
+
+
 // Ambil semua link di navbar
 const navLinks = document.querySelectorAll("nav a");
 

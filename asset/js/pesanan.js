@@ -33,7 +33,7 @@ waButton.addEventListener('click', () => {
                       `Total Harga: Rp${totalHarga.toLocaleString()}`;
 
     const encodedMessage = encodeURIComponent(waMessage);
-    const waNumber = '6281234567890'; // ganti dengan nomor WhatsApp tujuan
+    const waNumber = '62811381144285'; // ganti dengan nomor WhatsApp tujuan
 
     window.open(`https://wa.me/${waNumber}?text=${encodedMessage}`, '_blank');
 

@@ -19,7 +19,7 @@
   <span></span>
 </div>
     <div class="menu">
-      <ul>
+      <ul class="hidden" id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="tentang.html" class="active">Tentang Kami</a></li>
         <li><a href="donasi.html">Donasi Pakaian</a></li>
@@ -27,10 +27,6 @@
         <li><a href="pesanan.html">Pemesanan</a></li>
         <li><a href="kontak.html">Alamat & Kontak</a></li>
       </ul>
-    </div>
-    <div class="search">
-      <input type="text" id="navSearch" placeholder="Cari produk...">
-      <button id="navSearchBtn">Cari</button>
     </div>
   </nav>
   <main>
@@ -47,13 +43,6 @@
       <p>&copy; 2023 Bersi-bersi Lemari. All rights reserved.</p>
     </div>
   </footer>
-  <script>const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('active');
-});
-</script>
+  <script src="asset/js/app.js"></script>
 </body>
 </html>
