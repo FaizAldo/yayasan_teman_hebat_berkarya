@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemesanan - Bersi-bersi Lemari</title>
+  <link rel="stylesheet" href="asset/style/style.css">
+</head>
+<body>
+    <nav class="nav">
+    <div class="header">
+      <img src="asset/image/logo.png" alt="Logo">
+      <h1>Bersi-bersi Lemari</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="donasi.html">Donasi Pakaian</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="pesanan.html" class="active">Pemesanan</a></li>
+        <li><a href="kontak.html">Alamat & Kontak</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" id="navSearch" placeholder="Cari produk...">
+      <button id="navSearchBtn">Cari</button>
+    </div>
+  </nav>
+  <main>
+    <section id="pesanan" class="content">
+      <h2>Pemesanan</h2>
+      <form id="form-pesanan">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" required>
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" required></textarea>
+
+      <label for="produk">Pilih Produk:</label>
+      <select name="produk" required>
+        <option value="braided-keychain">Braided Keychain - 15.000/pcs</option>
+        <option value="fabric-keychain">Fabric Keychain - 15.000/pcs</option>
+        <option value="scrunchie">Scrunchie - 15.000/pcs</option>
+        <option value="doormat">Doormat - 125.000/pcs</option>
+      </select>
+
+      <button type="button" id="wa-button">Hubungi via WhatsApp</button>
+    </form>
+  </section>
+    <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Bersi-bersi Lemari. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="asset/js/pesanan.js"></script>
+</body>
+</html>

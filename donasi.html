@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donasi Pakaian - Bersi-bersi Lemari</title>
+  <link rel="stylesheet" href="asset/style/style.css">
+</head>
+<body>
+    <nav class="nav">
+    <div class="header">
+      <img src="asset/image/logo.png" alt="Logo">
+      <h1>Bersi-bersi Lemari</h1>
+    </div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="donasi.html" class="active">Donasi Pakaian</a></li>
+        <li><a href="katalog.html">Katalog</a></li>
+        <li><a href="pesanan.html">Pemesanan</a></li>
+        <li><a href="kontak.html">Alamat & Kontak</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" id="navSearch" placeholder="Cari produk...">
+      <button id="navSearchBtn">Cari</button>
+    </div>
+  </nav>
+  <main>
+    <section id="donasi" class="content">
+      <h2>Donasi Pakaian</h2>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="telepon">Telepon:</label>
+      <input type="text" id="telepon" required>
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" required></textarea>
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" required></textarea>
+
+      <button id="wa-button" type="button">Kirim</button>
+    </form>
+  </section>
+    <footer class="footer">
+        <div class="container">
+        <p>&copy; 2023 Bersi-bersi Lemari. All rights reserved.</p>
+        </div>
+  <script src="asset/js/app.js"></script>
+</body>
+</html>

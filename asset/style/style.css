@@ -1,0 +1,218 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+  height: 100%;            /* penting */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;       /* bikin full tinggi viewport */
+}
+
+/* ===== NAVBAR ===== */
+.nav {
+  background: #AD7D52;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 60px;            /* fix tinggi navbar */
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.heaader img {
+  display: flex;
+  height: 40px;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu a {  
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover, .menu a:active {
+  background-color: #664411;
+}
+
+main {
+  flex: 1;                 /* isi ruang kosong */
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;        /* offset biar ga ketutup navbar */
+}
+
+/* ===== SECTION ===== */
+section {
+  background-color: #F4EEE5;
+  color: #AD7D52;
+  width: 85%;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  line-height: 1.6;
+  flex-shrink: 0;          /* biar section tidak gepeng */
+}
+
+/* ===== KATALOG ===== */
+.katalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.katalog .box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.katalog .box:hover {
+  transform: scale(1.05);
+}
+
+.katalog img {
+  max-width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.katalog h3 {
+  margin: 10px 0 5px;
+}
+
+.katalog p {
+  font-size: 14px;
+  color: #555;
+}
+
+.katalog strong {
+  color: #AD7D52;
+  display: block;
+  margin-top: 8px;
+}
+
+/* ===== FORM ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea,
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #AD7D52;
+}
+
+form button {
+  background: #AD7D52;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #8a5f3d;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #645141;
+  color: #fcdcc2;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 14px;
+  margin-top: auto;        /* selalu dorong ke bawah */
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu ul li a {
+    padding: 10px;
+  }
+
+  .search {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .search input {
+    flex: 1;
+  }
+}
+@media (max-width: 480px) {
+  section {
+    width: 95%;
+    padding: 20px;
+  }
+}
