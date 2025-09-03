@@ -66,6 +66,12 @@ body {
   text-decoration: none;
 }
 
+.hamburger {
+  display: none; /* sembunyikan di desktop */
+  font-size: 28px;
+  cursor: pointer;
+}
+
 .menu a:hover, .menu a:active {
   background-color: #664411;
 }
@@ -184,22 +190,17 @@ form button:hover {
   margin-top: auto;        /* selalu dorong ke bawah */
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px;
-  }
-
+/* Responsive untuk mobile */
+@media screen and (max-width: 768px) {
   .menu ul {
     flex-direction: column;
-    width: 100%;
-  }
-
-  .menu ul li a {
+    display: none; /* sembunyikan default */
+    background-color: #645141;
+    position: absolute;
+    top: 60px;
+    right: 20px;
     padding: 10px;
+    border-radius: 8px;
   }
 
   .search {
