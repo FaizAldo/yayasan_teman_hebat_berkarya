@@ -37,13 +37,14 @@ body {
 .header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  flex-grow: 1;
+  gap: 10px;  /* jarak logo & nama */
 }
 
-.heaader img {
-  display: flex;
-  height: 40px;
+.header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;  /* membuat lingkaran */
+  object-fit: cover;
 }
 .menu {
   display: flex;
