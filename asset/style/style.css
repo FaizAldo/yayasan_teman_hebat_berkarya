@@ -201,6 +201,13 @@ form button:hover {
   margin-top: auto;        /* selalu dorong ke bawah */
 }
 
+
+  /* animasi dropdown */
+  @keyframes dropdown {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
 /* Responsive */
 @media (max-width: 768px) {
 
