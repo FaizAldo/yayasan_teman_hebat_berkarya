@@ -13,9 +13,11 @@
       <img src="asset/image/katalog.jpg" alt="Logo">
       <h1>Bersi-bersi Lemari</h1>
     </div>
-      <div class="hamburger" id="hamburger">
-    &#9776; <!-- icon hamburger -->
-  </div>
+  <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     <div class="menu">
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -45,12 +47,12 @@
       <p>&copy; 2023 Bersi-bersi Lemari. All rights reserved.</p>
     </div>
   </footer>
-  <script>
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu').querySelector('ul');
+  <script>const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
 
 hamburger.addEventListener('click', () => {
-  menu.classList.toggle('show');
+  hamburger.classList.toggle('active');
+  menu.classList.toggle('active');
 });
 </script>
 </body>
