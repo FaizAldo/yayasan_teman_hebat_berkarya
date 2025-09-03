@@ -51,5 +51,13 @@
       <p>&copy; 2023 Bersi-bersi Lemari. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu').querySelector('ul');
+
+hamburger.addEventListener('click', () => {
+  menu.classList.toggle('show');
+});
+</script>
 </body>
 </html>
