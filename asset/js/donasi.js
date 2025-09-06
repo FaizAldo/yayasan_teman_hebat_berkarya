@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Nomor WhatsApp tujuan (gunakan kode negara tanpa tanda +)
-    const waNumber = '6281381144285'; // ganti dengan nomor WhatsApp tujuan
+    const waNumber = '6281295365840'; // ganti dengan nomor WhatsApp tujuan
 
     // Buat pesan
     const waMessage = `Halo, saya ingin berdonasi pakaian:\n\n` +
